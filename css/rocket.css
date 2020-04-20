@@ -64,6 +64,10 @@ a:hover {
 	display: block;
 }
 
+body.body-state1 .nervous {
+	display: none;
+}
+
 .cant-wait {
 	position: absolute;
 	bottom: 220px;
@@ -76,6 +80,10 @@ a:hover {
 
 .cant-wait.show {
 	display: block;
+}
+
+body.body-state1 .cant-wait {
+	display: none;
 }
 
 .rocket {
