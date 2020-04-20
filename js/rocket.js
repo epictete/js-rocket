@@ -1,32 +1,32 @@
 var timer = null;
-var countDownNumber = 10;
+var countdownNumber = 10;
 
 var changeState = function (state) {
 	document.body.className = 'body-state'+state;
 	clearInterval(timer);
-	countDownNumber = 10;
-	document.getElementById('countdown').innerHTML = countDownNumber;
+	countdownNumber = 10;
+	document.getElementById('countdown').innerHTML = countdownNumber;
 
 	// countdown
 	if (state == 2) {
 		timer = setInterval (function () {
-			countDownNumber = countDownNumber-1;
-			document.getElementById('countdown').innerHTML = countDownNumber;
+			countdownNumber = countdownNumber-1;
+			document.getElementById('countdown').innerHTML = countdownNumber;
 
-			if (countDownNumber > 4 && countDownNumber <= 7) {
+			if (countdownNumber > 4 && countdownNumber <= 7) {
 				// be nervous
 				document.getElementById('nervous').className = 'nervous show';	
 			} else {
 				document.getElementById('nervous').className = 'nervous';
 			}
 
-			if (countDownNumber > 1 && countDownNumber <= 4) {
+			if (countdownNumber > 1 && countdownNumber <= 4) {
 				// can't wait
 				document.getElementById('cant-wait').className = 'cant-wait show';
 			} else {
 				document.getElementById('cant-wait').className = 'cant-wait';
 			}
-			if (countDownNumber <= 0) {
+			if (countdownNumber <= 0) {
 				changeState(3);
 			}
 		}, 500);
@@ -37,7 +37,7 @@ var changeState = function (state) {
 			console.log ('randomNumber: ', randomNumber);
 
 			// success
-			if (randomNumber > 9) {
+			if (randomNumber > 3) {
 				changeState(4);
 
 			} else {
