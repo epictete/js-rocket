@@ -44,5 +44,8 @@ var changeState = function (state) {
 				changeState(5); // oh no!
 			}
 		}, 2000);
+	} else if (state == 1) {
+		document.getElementById('nervous').className = 'nervous';
+		document.getElementById('cant-wait').className = 'cant-wait';
 	}
 }
