@@ -86,7 +86,7 @@ a:hover {
 	height: 272px;
 	margin-left: -71.5px;
 	background: url(../img/rocket-state1.png) no-repeat 0 0;
-	transition: bottom 10000ms;
+	transition: bottom 15000ms;
 }
 
 /* rocket bg image */
@@ -129,11 +129,3 @@ body.body-state2 .state2 {display: block;}
 body.body-state3 .state3 {display: block;}
 body.body-state4 .state4 {display: block;}
 body.body-state5 .state5 {display: block;}
-
-a {
-
-}
-
-a.button {
-
-}
